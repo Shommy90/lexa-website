@@ -20,10 +20,16 @@
     <link rel="stylesheet" href="/styles/main.css" />
 
     <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -248,6 +254,150 @@
       </div>
     </section>
 
+    <section class="projects">
+      <div class="tabs-box">
+        <div class="tabs-box__tabs-holder">
+          <div class="container-wide">
+            <div class="projects__experience">
+              <div class="projects__experience-box--left">
+                <p class="projects__experience-number">12</p>
+                <p class="projects__experience-text">Years of experience</p>
+              </div>
+              <div class="projects__experience-box">
+                <p class="projects__experience-number">5</p>
+                <p class="projects__experience-text">Team members</p>
+              </div>
+            </div>
+
+            <ul class="tabs-box__tabs tabs">
+              <li class="tabs__tab active" rel="tab1">
+                <div class="tab-logo-holder">
+                  <img
+                    class="tab-logo"
+                    src="/assets/real-estate.svg"
+                    alt="tab logo"
+                  />
+                </div>
+                <h4 class="tab-title">Real Estate Investments</h4>
+                <span class="tab-arrow"></span>
+              </li>
+              <li class="tabs__tab" rel="tab2">
+                <div class="tab-logo-holder">
+                  <img class="tab-logo" src="/assets/land.svg" alt="tab logo" />
+                </div>
+                <h4 class="tab-title">
+                  Purchase of land Documentation & construction
+                </h4>
+                <span class="tab-arrow"></span>
+              </li>
+              <li class="tabs__tab" rel="tab3">
+                <div class="tab-logo-holder">
+                  <img
+                    class="tab-logo"
+                    src="/assets/startups.svg"
+                    alt="tab logo"
+                  />
+                </div>
+                <h4 class="tab-title">Startups & Innovative technologies</h4>
+                <span class="tab-arrow"></span>
+              </li>
+              <li class="tabs__tab tab_last" rel="tab4">
+                <div class="tab-logo-holder">
+                  <img
+                    class="tab-logo"
+                    src="/assets/stocks.svg"
+                    alt="tab logo"
+                  />
+                </div>
+                <h4 class="tab-title">Stocks and Liquid Assets</h4>
+                <span class="tab-arrow"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tabs-box__content">
+          <img
+            class="tabs-box__content--image"
+            src="/assets/projects-bg.png"
+            alt="projects img"
+          />
+          <div class="tab__content" id="tab1">
+            <img
+              class="tab__content--logo"
+              src="/assets/real-estate.svg"
+              alt="tab content logo"
+            />
+            <h3 class="tab__content--title">Real Estate Investments</h3>
+            <p class="tab__content--text">
+              Investing in construction projects is our passion. We are
+              seamlessly handling all the process start to end and collaborating
+              with our investors to build a profitable construction project and
+              sell it to the market. For specific clients, we find, design and
+              construct fit projects for their needs.
+            </p>
+
+            <a href="#" class="button tab__content--btn">contact us</a>
+          </div>
+          <div class="tab__content" id="tab2">
+            <img
+              class="tab__content--logo"
+              src="/assets/land.svg"
+              alt="tab content logo"
+            />
+            <h3 class="tab__content--title">
+              Purchase of land Documentation & construction
+            </h3>
+            <p class="tab__content--text">
+              Investing in construction projects is our passion. We are
+              seamlessly handling all the process start to end and collaborating
+              with our investors to build a profitable construction project and
+              sell it to the market. For specific clients, we find, design and
+              construct fit projects for their needs.
+            </p>
+
+            <a href="#" class="button tab__content--btn">contact us</a>
+          </div>
+          <div class="tab__content" id="tab3">
+            <img
+              class="tab__content--logo"
+              src="/assets/startups.svg"
+              alt="tab content logo"
+            />
+            <h3 class="tab__content--title">
+              Startups & Innovative technologies
+            </h3>
+            <p class="tab__content--text">
+              Investing in construction projects is our passion. We are
+              seamlessly handling all the process start to end and collaborating
+              with our investors to build a profitable construction project and
+              sell it to the market. For specific clients, we find, design and
+              construct fit projects for their needs.
+            </p>
+
+            <a href="#" class="button tab__content--btn">contact us</a>
+          </div>
+          <div class="tab__content" id="tab4">
+            <img
+              class="tab__content--logo"
+              src="/assets/stocks.svg"
+              alt="tab content logo"
+            />
+            <h3 class="tab__content--title">Stocks and Liquid Assets</h3>
+            <p class="tab__content--text">
+              Investing in construction projects is our passion. We are
+              seamlessly handling all the process start to end and collaborating
+              with our investors to build a profitable construction project and
+              sell it to the market. For specific clients, we find, design and
+              construct fit projects for their needs.
+            </p>
+
+            <a href="#" class="button tab__content--btn">contact us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer>
       <div class="footer__container">
         <div class="footer__top">
@@ -307,5 +457,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="/js/tabs.js"></script>
   </body>
 </html>
