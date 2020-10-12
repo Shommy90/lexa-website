@@ -223,83 +223,83 @@ footer {
 // QUESTIONS
 .questions {
   padding: 100px 0;
+
+  .carousel {
+    display: flex;
+    height: 250px;
+  }
+
+  .carousel-inner {
+    max-width: 1100px;
+  }
+
+  .carousel-indicators {
+    position: static;
+    margin: 0;
+
+    &.indicators--left {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 200px;
+      padding-top: 30px;
+
+      li {
+        background-color: transparent;
+        text-indent: 0;
+        margin: 0;
+        width: auto;
+        height: auto;
+        background-clip: unset;
+        border: none;
+        cursor: unset;
+        display: flex;
+        align-items: center;
+        opacity: 1;
+        margin-bottom: 20px;
+
+        .indicator__number {
+          font-size: 0.8rem;
+          color: #425559;
+          letter-spacing: 0.5px;
+          width: 30px;
+        }
+
+        .indicator__text {
+          font-family: "Stem-Bold";
+          text-transform: uppercase;
+          font-size: 0.8rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 77px;
+          height: 34px;
+          background-color: #eaeaea;
+          color: #2b2b2b;
+          cursor: pointer;
+          transition: all 0.5s ease;
+          user-select: none;
+        }
+
+        &.active {
+          .indicator__text {
+            background-color: #383838;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    &.indicators--bottom {
+      background-color: lightgrey;
+      position: absolute;
+      bottom: 0;
+    }
+  }
 }
 
 .questions__container {
   max-width: 1500px;
-}
-
-.carousel {
-  display: flex;
-  height: 250px;
-}
-
-.carousel-inner {
-  max-width: 1100px;
-}
-
-.carousel-indicators {
-  position: static;
-  margin: 0;
-
-  &.indicators--left {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 200px;
-    padding-top: 30px;
-
-    li {
-      background-color: transparent;
-      text-indent: 0;
-      margin: 0;
-      width: auto;
-      height: auto;
-      background-clip: unset;
-      border: none;
-      cursor: unset;
-      display: flex;
-      align-items: center;
-      opacity: 1;
-      margin-bottom: 20px;
-
-      .indicator__number {
-        font-size: 0.8rem;
-        color: #425559;
-        letter-spacing: 0.5px;
-        width: 30px;
-      }
-
-      .indicator__text {
-        font-family: "Stem-Bold";
-        text-transform: uppercase;
-        font-size: 0.8rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 77px;
-        height: 34px;
-        background-color: #eaeaea;
-        color: #2b2b2b;
-        cursor: pointer;
-        transition: all 0.5s ease;
-        user-select: none;
-      }
-
-      &.active {
-        .indicator__text {
-          background-color: #383838;
-          color: #ffffff;
-        }
-      }
-    }
-  }
-
-  &.indicators--bottom {
-    background-color: lightgrey;
-    position: absolute;
-    bottom: 0;
-  }
 }
 
 .questions__title {
@@ -516,7 +516,7 @@ li.tabs__tab {
 }
 
 .tabs-box__content {
-  min-height: 1000px;
+  // min-height: 1000px;
   position: relative;
 }
 
@@ -561,4 +561,65 @@ li.tabs__tab {
   letter-spacing: 1px;
   color: #2b2b2b;
   margin-bottom: 100px;
+}
+
+// PROJECTS CAROUSEL
+.projects-carousel {
+  .indicator-holder__arrows {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 50px;
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    position: static;
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    margin: 0 5px;
+  }
+
+  .carousel-indicators {
+    position: static;
+    margin: 0;
+
+    li {
+      width: auto;
+      height: auto;
+      text-indent: 0;
+      margin: 0;
+      border: none;
+      max-width: 265px;
+      width: 100%;
+      height: 150px;
+      overflow: hidden;
+      margin-right: 2rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.active {
+        border: 3px solid #000;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+
+.projects-carousel__title {
+  font-family: "Stem-Bold";
+  text-align: right;
+  margin-bottom: 2.4rem;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.projects-carousel__indicators-holder {
+  display: flex;
+  justify-content: flex-end;
 }
