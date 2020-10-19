@@ -1028,7 +1028,7 @@ footer nav a {
 
 .about__investment--content p {
   font-family: "Stem-Light";
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 1.8rem;
   letter-spacing: 0.7px;
   color: #425559;
@@ -1212,11 +1212,29 @@ li.tabs__tab.active span.tab-arrow {
 
 .tab__content--text {
   max-width: 960px;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 1.8rem;
   letter-spacing: 1px;
   color: #2b2b2b;
   margin-bottom: 100px;
+}
+
+.projects-carousel .projects-carousel__title {
+  font-family: "Stem-Bold";
+  text-align: right;
+  margin-bottom: 2.4rem;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.projects-carousel .projects-carousel__indicators-holder .container-wide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .projects-carousel .indicator-holder__arrows {
@@ -1270,20 +1288,108 @@ li.tabs__tab.active span.tab-arrow {
           box-sizing: border-box;
 }
 
-.projects-carousel__title {
-  font-family: "Stem-Bold";
-  text-align: right;
-  margin-bottom: 2.4rem;
-  font-size: 1.75rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+.projects-carousel .carousel-inner {
+  padding: 50px 0;
 }
 
-.projects-carousel__indicators-holder {
+.projects-carousel .carousel-item__project-content {
+  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.projects-carousel .carousel-item__project-content--title-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+
+.projects-carousel .carousel-item__project-content--title {
+  font-family: "Stem-Bold";
+  font-size: 3rem;
+  letter-spacing: 1.5px;
+  line-height: 1.75rem;
+  color: #383838;
+}
+
+.projects-carousel .carousel-item__project-content--subttitle {
+  font-family: "Stem-ExtraLight";
+  font-size: 1.5rem;
+  line-height: 4.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.projects-carousel .carousel-item__project-content--text {
+  max-width: 870px;
+  width: 100%;
+  margin-left: 3.5rem;
+}
+
+.projects-carousel .carousel-item__project-content--title {
+  font-family: "Stem-Medium";
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  line-height: 1.5rem;
+  color: #383838;
+  margin-bottom: 2.5rem;
+}
+
+.projects-carousel .carousel-item__project-content--text p {
+  font-family: "Stem-Light";
+  font-size: 1.25rem;
+  letter-spacing: 0.7px;
+  line-height: 1.5rem;
+  color: #2b2b2b;
+}
+
+.projects-carousel .carousel-item__project-stats--logos {
+  padding: 4rem 0;
+  min-height: 350px;
+  background-color: #f4f4f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects-carousel .carousel-item__project-stats--logos .container-wide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.projects-carousel ul.projects-logo-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects-carousel ul.projects-logo-list li {
+  padding: 0 10px;
 }
