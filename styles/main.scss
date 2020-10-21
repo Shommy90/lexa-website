@@ -812,11 +812,6 @@ li.tabs__tab {
 .team {
   padding: 3rem 0;
 
-  .container {
-    padding-bottom: 6rem;
-    border-bottom: 1px solid #eaeaea;
-  }
-
   .team-carousel__indicators-holder {
     position: relative;
   }
@@ -1016,7 +1011,14 @@ li.team__tab {
   line-height: 1.5rem;
 }
 
+.container-wide.border-line {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid #eaeaea;
+  width: 100%;
+}
+
 // CONTACT
 .contact {
-  padding: 6rem 0;
+  padding: 2rem 0;
 }

@@ -1514,11 +1514,6 @@ li.tabs__tab.active span.tab-arrow {
   padding: 3rem 0;
 }
 
-.team .container {
-  padding-bottom: 6rem;
-  border-bottom: 1px solid #eaeaea;
-}
-
 .team .team-carousel__indicators-holder {
   position: relative;
 }
@@ -1743,6 +1738,13 @@ li.team__tab.active .team__tab-arrow-down {
   line-height: 1.5rem;
 }
 
+.container-wide.border-line {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid #eaeaea;
+  width: 100%;
+}
+
 .contact {
-  padding: 6rem 0;
+  padding: 2rem 0;
 }
