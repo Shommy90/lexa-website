@@ -1170,6 +1170,7 @@ li.tabs__tab.active span.tab-arrow {
   font-family: "Stem-Medium";
   font-size: 1.2rem;
   color: #2b2b2b;
+  margin-bottom: 1rem;
 }
 
 .tabs-box__content {
@@ -1513,8 +1514,72 @@ li.tabs__tab.active span.tab-arrow {
   padding: 3rem 0;
 }
 
+.team .container {
+  padding-bottom: 6rem;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.team .team-carousel__indicators-holder {
+  position: relative;
+}
+
+.team ol.carousel-indicators {
+  margin: 0;
+  position: static;
+  margin-bottom: 2.5rem;
+}
+
+.team ol.carousel-indicators li {
+  font-family: "Stem-Light";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: auto;
+  height: auto;
+  text-indent: 0;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0 1rem;
+  text-transform: uppercase;
+  color: #2b2b2b;
+  opacity: 1;
+  letter-spacing: 0.6px;
+}
+
+.team ol.carousel-indicators li.active {
+  font-family: "Stem-Bold";
+  color: #000;
+}
+
+.team .indicator-holder__arrows {
+  position: absolute;
+  width: 80px;
+  right: -30px;
+  top: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team .indicator-holder__arrows a {
+  opacity: 1;
+  position: static;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35px;
+  height: 35px;
+}
+
+.team .indicator-holder__arrows a:first-child {
+  margin-right: 10px;
+}
+
 .team__holder {
-  padding: 3rem;
+  padding: 3rem 5rem 4rem;
   -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
 }
@@ -1560,4 +1625,124 @@ li.tabs__tab.active span.tab-arrow {
   font-size: 1rem;
   letter-spacing: 0.6px;
   color: #2b2b2b;
+}
+
+ul.team__tabs-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+li.team__tab {
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1rem;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+li.team__tab:hover {
+  opacity: 0.8;
+}
+
+li.team__tab .team__tab-arrow-down {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 12px;
+  height: 12px;
+  background-image: url("../assets/tab-arrow-down.svg");
+  display: none;
+}
+
+li.team__tab.active .team__tab-arrow-down {
+  display: block;
+}
+
+.teab__tab-image-holder {
+  max-width: 210px;
+  width: 100%;
+  height: 210px;
+  margin-bottom: 1.5rem;
+}
+
+.teab__tab-image-holder img {
+  width: 100%;
+}
+
+.team__tab-name {
+  padding-bottom: 1.6rem;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.team__tab-name::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background-color: #2588ad;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.team__tab-name--name {
+  font-family: "Stem-Medium";
+  font-size: 1.2rem;
+  color: #383838;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.team__tab-name--linkedin {
+  position: absolute;
+  right: -30px;
+  top: 0;
+  font-size: 1.4rem;
+  color: #383838;
+}
+
+.team__tab-name--title {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #2b2b2b;
+  margin-top: 3px;
+}
+
+.team__tab-content--name {
+  font-family: "Stem-Medium";
+  font-size: 1.1rem;
+  letter-spacing: 0.7px;
+  color: #383838;
+  margin-bottom: 1.3rem;
+}
+
+.team__tab-content--text {
+  font-family: "Stem-Light";
+  font-size: 1.15rem;
+  letter-spacing: 0.7px;
+  color: #2b2b2b;
+  line-height: 1.5rem;
+}
+
+.contact {
+  padding: 6rem 0;
 }
