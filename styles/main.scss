@@ -337,11 +337,12 @@ footer {
   color: #ffffff;
   max-width: 915px;
   width: 100%;
-  padding: 60px;
+  padding: 3.5rem;
+  padding-bottom: 3.8rem;
   overflow: hidden;
   position: absolute;
   right: 0;
-  top: 80px;
+  top: 100px;
   background: url(../assets/squares-bg.svg) no-repeat top right;
   background-color: #555555;
 
@@ -387,13 +388,13 @@ footer {
   min-height: 700px;
   background-image: linear-gradient(45deg, transparent 110px, #ffffff 110px);
   filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.15));
-  padding: 50px 120px 100px;
+  padding: 3.5rem 7rem 5.5rem;
   position: relative;
   top: -125px;
 
   p {
     font-family: "Stem-Light";
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.8rem;
     letter-spacing: 0.7px;
     color: #425559;
@@ -422,6 +423,7 @@ footer {
   object-fit: contain;
   margin-bottom: 200px;
   margin-right: 70px;
+  margin-left: 20px;
 }
 
 // PROJECTS
@@ -435,7 +437,8 @@ footer {
 }
 
 .projects__experience {
-  padding: 20px 80px 20px 20px;
+  padding: 1.2rem;
+  padding-right: 4.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -465,12 +468,12 @@ ul.tabs-box__tabs {
 }
 
 li.tabs__tab {
-  max-width: 320px;
+  max-width: 300px;
   width: 100%;
-  height: 340px;
+  height: 300px;
   border-left: 1px solid #f2f2f2;
   border-top: 8px solid #f2f2f2;
-  padding: 50px 60px;
+  padding: 3.4rem 2.8rem;
   display: flex;
   flex-direction: column;
   cursor: pointer;
@@ -491,7 +494,7 @@ li.tabs__tab {
     height: 12px;
     transition: all 0.1s ease;
     position: absolute;
-    bottom: 50px;
+    bottom: 40px;
   }
 
   &.active {
@@ -534,7 +537,7 @@ li.tabs__tab {
   width: 100%;
   min-height: 700px;
   background-image: linear-gradient(45deg, transparent 110px, #ffffff 110px);
-  padding: 70px 150px 100px;
+  padding: 4rem 10rem 6rem;
   position: absolute;
   top: 0;
   right: 0;
