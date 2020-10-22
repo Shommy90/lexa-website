@@ -502,63 +502,28 @@ input[type="range"]:focus {
 }
 
 @font-face {
-  font-family: Stem-Thin;
-  src: url(../fonts/Stem-Thin.otf);
-}
-
-@font-face {
-  font-family: Stem-Light;
-  src: url(../fonts/Stem-Light.otf);
-}
-
-@font-face {
-  font-family: Stem-LightItalic;
-  src: url(../fonts/Stem-LightItalic.otf);
-}
-
-@font-face {
-  font-family: Stem-ExtraLight;
+  font-family: StemExtraLight;
   src: url(../fonts/Stem-ExtraLight.otf);
 }
 
 @font-face {
-  font-family: Stem-ExtraLightItalic;
-  src: url(../fonts/Stem-ExtraLightItalic.otf);
+  font-family: StemLight;
+  src: url(../fonts/Stem-Light.otf);
 }
 
 @font-face {
-  font-family: Stem-Regular;
+  font-family: StemRegular;
   src: url(../fonts/Stem-Regular.otf);
 }
 
 @font-face {
-  font-family: Stem-Medium;
+  font-family: StemMedium;
   src: url(../fonts/Stem-Medium.otf);
 }
 
 @font-face {
-  font-family: Stem-MediumItalic;
-  src: url(../fonts/Stem-MediumItalic.otf);
-}
-
-@font-face {
-  font-family: Stem-Italic;
-  src: url(../fonts/Stem-Italic.otf);
-}
-
-@font-face {
-  font-family: Stem-Hairline;
-  src: url(../fonts/Stem-Hairline.otf);
-}
-
-@font-face {
-  font-family: Stem-Bold;
+  font-family: StemBold;
   src: url(../fonts/Stem-Bold.otf);
-}
-
-@font-face {
-  font-family: Stem-BoldItalic;
-  src: url(../fonts/Stem-BoldItalic.otf);
 }
 
 * {
@@ -571,7 +536,7 @@ html {
 }
 
 body {
-  font-family: "Stem-Light";
+  font-family: StemLight;
   max-width: 2000px;
   width: 100%;
   margin: 0 auto;
@@ -579,7 +544,7 @@ body {
 }
 
 .button {
-  font-family: "Stem-Medium";
+  font-family: StemMedium;
   width: 200px;
   padding: 0 20px;
   min-height: 50px;
@@ -668,7 +633,7 @@ nav a {
 
 nav a.active {
   color: #000000;
-  font-family: "Stem-Bold";
+  font-family: StemBold;
 }
 
 .header__right {
@@ -684,7 +649,7 @@ nav a.active {
 }
 
 .header__phone-number {
-  font-family: "Stem-Medium";
+  font-family: StemMedium;
   font-size: 20px;
   color: #383838;
   font-weight: bold;
@@ -892,7 +857,7 @@ footer nav a {
 }
 
 .questions .carousel-indicators.indicators--left li .indicator__text {
-  font-family: "Stem-Bold";
+  font-family: StemBold;
   text-transform: uppercase;
   font-size: 0.8rem;
   display: -webkit-box;
@@ -933,7 +898,7 @@ footer nav a {
 }
 
 .questions__title {
-  font-family: "Stem-Bold";
+  font-family: StemBold;
   font-size: 56px;
   text-align: center;
   letter-spacing: 3.3px;
@@ -977,7 +942,7 @@ footer nav a {
 }
 
 .about__text--bg-dark p {
-  font-family: "Stem-Light";
+  font-family: StemLight;
   font-size: 1.15rem;
   line-height: 1.6rem;
   letter-spacing: 0.7px;
@@ -990,7 +955,7 @@ footer nav a {
 }
 
 .about__text-title {
-  font-family: "Stem-Medium";
+  font-family: StemMedium;
   font-size: 1.5rem;
   letter-spacing: 0.16rem;
   margin-bottom: 1.8rem;
@@ -1030,7 +995,7 @@ footer nav a {
 }
 
 .about__investment--content p {
-  font-family: "Stem-Light";
+  font-family: StemLight;
   font-size: 1.1rem;
   line-height: 1.8rem;
   letter-spacing: 0.7px;
@@ -1039,7 +1004,7 @@ footer nav a {
 }
 
 .about__investment--content p strong {
-  font-family: "Stem-Medium";
+  font-family: StemMedium;
 }
 
 .investment-content__text-ellipse {
@@ -1095,14 +1060,14 @@ footer nav a {
 }
 
 .projects__experience-number {
-  font-family: "Stem-Bold";
+  font-family: StemBold;
   font-size: 3rem;
   letter-spacing: 3px;
   color: #383838;
 }
 
 .projects__experience-text {
-  font-family: "Stem-Light";
+  font-family: StemLight;
   font-size: 0.8rem;
   line-height: 1.2rem;
   color: #949494;
@@ -1172,7 +1137,7 @@ li.tabs__tab.active span.tab-arrow {
 }
 
 .tab-title {
-  font-family: "Stem-Medium";
+  font-family: StemMedium;
   font-size: 1.2rem;
   color: #2b2b2b;
   margin-bottom: 1rem;
@@ -1206,7 +1171,7 @@ li.tabs__tab.active span.tab-arrow {
 }
 
 .tab__content--title {
-  font-family: "Stem-Bold";
+  font-family: StemBold;
   font-size: 2rem;
   line-height: 2.5rem;
   letter-spacing: 1.9px;
@@ -1230,7 +1195,7 @@ li.tabs__tab.active span.tab-arrow {
 }
 
 .projects-carousel .projects-carousel__title {
-  font-family: "Stem-Bold";
+  font-family: StemBold;
   text-align: right;
   margin-bottom: 2.4rem;
   font-size: 1.75rem;
@@ -1329,14 +1294,14 @@ li.tabs__tab.active span.tab-arrow {
 }
 
 .projects-carousel .carousel-item__project-content--title {
-  font-family: "Stem-Bold";
+  font-family: StemBold;
   font-size: 2.9rem;
   letter-spacing: 1.5px;
   color: #383838;
 }
 
 .projects-carousel .carousel-item__project-content--subttitle {
-  font-family: "Stem-ExtraLight";
+  font-family: StemExtraLight;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -1359,7 +1324,7 @@ li.tabs__tab.active span.tab-arrow {
 }
 
 .projects-carousel .carousel-item__project-content--title--small {
-  font-family: "Stem-Medium";
+  font-family: StemMedium;
   font-size: 1.2rem;
   text-transform: uppercase;
   line-height: 1.5rem;
@@ -1368,7 +1333,7 @@ li.tabs__tab.active span.tab-arrow {
 }
 
 .projects-carousel .carousel-item__project-content--text p {
-  font-family: "Stem-Light";
+  font-family: StemLight;
   font-size: 1.25rem;
   letter-spacing: 0.7px;
   line-height: 1.5rem;
@@ -1442,7 +1407,7 @@ li.tabs__tab.active span.tab-arrow {
 }
 
 .projects-carousel ul.projects-logo-list p {
-  font-family: "Stem-Bold";
+  font-family: StemBold;
   text-align: center;
   font-size: 1.2rem;
 }
@@ -1484,7 +1449,7 @@ li.tabs__tab.active span.tab-arrow {
 }
 
 .item__project-stats--numbers-holder-top li {
-  font-family: "Stem-Medium";
+  font-family: StemMedium;
   font-size: 10px;
   color: #5d5d5d;
   letter-spacing: 0.5;
@@ -1506,7 +1471,7 @@ li.tabs__tab.active span.tab-arrow {
 }
 
 .item__project-stats--numbers-holder-bottom li {
-  font-family: "Stem-Bold";
+  font-family: StemBold;
   font-size: 1.4rem;
   max-width: 170px;
   width: 100%;
@@ -1530,7 +1495,7 @@ li.tabs__tab.active span.tab-arrow {
 }
 
 .team ol.carousel-indicators li {
-  font-family: "Stem-Light";
+  font-family: StemLight;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-flex: 0;
@@ -1550,7 +1515,7 @@ li.tabs__tab.active span.tab-arrow {
 }
 
 .team ol.carousel-indicators li.active {
-  font-family: "Stem-Bold";
+  font-family: StemBold;
   color: #000;
 }
 
@@ -1613,7 +1578,7 @@ li.tabs__tab.active span.tab-arrow {
 }
 
 .team__title {
-  font-family: "Stem-Bold";
+  font-family: StemBold;
   font-size: 1.7rem;
   letter-spacing: 1px;
   color: #383838;
@@ -1621,7 +1586,7 @@ li.tabs__tab.active span.tab-arrow {
 }
 
 .team__sub-title {
-  font-family: "Stem-Light";
+  font-family: StemLight;
   font-size: 1rem;
   letter-spacing: 0.6px;
   color: #2b2b2b;
@@ -1705,7 +1670,7 @@ li.team__tab.active .team__tab-arrow-down {
 }
 
 .team__tab-name--name {
-  font-family: "Stem-Medium";
+  font-family: StemMedium;
   font-size: 1.2rem;
   color: #383838;
   text-transform: capitalize;
@@ -1728,7 +1693,7 @@ li.team__tab.active .team__tab-arrow-down {
 }
 
 .team__tab-content--name {
-  font-family: "Stem-Medium";
+  font-family: StemMedium;
   font-size: 1.1rem;
   letter-spacing: 0.7px;
   color: #383838;
@@ -1736,7 +1701,7 @@ li.team__tab.active .team__tab-arrow-down {
 }
 
 .team__tab-content--text {
-  font-family: "Stem-Light";
+  font-family: StemLight;
   font-size: 1.15rem;
   letter-spacing: 0.7px;
   color: #2b2b2b;
@@ -1782,7 +1747,7 @@ li.team__tab.active .team__tab-arrow-down {
 }
 
 .contact-form__title {
-  font-family: "Stem-Bold";
+  font-family: StemBold;
   font-size: 2.7rem;
   letter-spacing: 1.7px;
   color: #383838;
@@ -1833,7 +1798,7 @@ li.team__tab.active .team__tab-arrow-down {
 
 .contact-form__input::-webkit-input-placeholder,
 .contact-form__input-holder--message-textarea::-webkit-input-placeholder {
-  font-family: "Stem-Regular";
+  font-family: StemRegular;
   font-size: 0.8rem;
   color: #383838;
   opacity: 0.8;
@@ -1841,7 +1806,7 @@ li.team__tab.active .team__tab-arrow-down {
 
 .contact-form__input:-ms-input-placeholder,
 .contact-form__input-holder--message-textarea:-ms-input-placeholder {
-  font-family: "Stem-Regular";
+  font-family: StemRegular;
   font-size: 0.8rem;
   color: #383838;
   opacity: 0.8;
@@ -1849,7 +1814,7 @@ li.team__tab.active .team__tab-arrow-down {
 
 .contact-form__input::-ms-input-placeholder,
 .contact-form__input-holder--message-textarea::-ms-input-placeholder {
-  font-family: "Stem-Regular";
+  font-family: StemRegular;
   font-size: 0.8rem;
   color: #383838;
   opacity: 0.8;
@@ -1857,7 +1822,7 @@ li.team__tab.active .team__tab-arrow-down {
 
 .contact-form__input::placeholder,
 .contact-form__input-holder--message-textarea::placeholder {
-  font-family: "Stem-Regular";
+  font-family: StemRegular;
   font-size: 0.8rem;
   color: #383838;
   opacity: 0.8;
@@ -1908,7 +1873,7 @@ button {
 }
 
 .contact-info__number--country {
-  font-family: "Stem-Bold";
+  font-family: StemBold;
   font-size: 1.3rem;
   letter-spacing: 0.8px;
   color: #383838;
@@ -1916,7 +1881,7 @@ button {
 }
 
 .contact-info__number--number {
-  font-family: "Stem-Bold";
+  font-family: StemBold;
   color: #383838;
   font-size: 2.4rem;
 }
@@ -1929,7 +1894,7 @@ button {
 }
 
 .contact-info__email {
-  font-family: "Stem-Light";
+  font-family: StemLight;
   font-size: 2rem;
   letter-spacing: 1.2px;
   color: #575757;
@@ -1938,7 +1903,7 @@ button {
 }
 
 .contact-info__address p {
-  font-family: "Stem-Light";
+  font-family: StemLight;
   font-size: 1rem;
   line-height: 1.5rem;
 }
