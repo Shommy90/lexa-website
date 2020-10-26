@@ -533,6 +533,7 @@ input[type="range"]:focus {
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
@@ -578,7 +579,7 @@ body {
 }
 
 header {
-  padding: 30px 0 10px;
+  padding: 1.9rem 0 0.35rem;
 }
 
 header .container-wide {
@@ -604,8 +605,8 @@ header .container-wide {
 
 .header__logo-holder {
   border-right: 1px solid rgba(66, 85, 89, 0.3);
-  padding-right: 50px;
-  margin-right: 50px;
+  padding-right: 3rem;
+  margin-right: 3rem;
 }
 
 .header__logo {
@@ -650,7 +651,7 @@ nav a.active {
 
 .header__phone-number {
   font-family: StemMedium;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #383838;
   font-weight: bold;
 }
@@ -676,7 +677,7 @@ nav a.active {
 
 .header__socials-link {
   color: #000000;
-  font-size: 30px;
+  font-size: 1.8rem;
 }
 
 .header__socials-link.linked-in {
@@ -764,7 +765,7 @@ footer nav a {
 
 .footer__socials-link {
   color: #000000;
-  font-size: 26px;
+  font-size: 1.5rem;
 }
 
 .footer__socials-link.linked-in {
@@ -796,7 +797,7 @@ footer nav a {
 }
 
 .questions {
-  padding: 100px 0;
+  padding: 6rem 0;
 }
 
 .questions .carousel {
@@ -899,7 +900,7 @@ footer nav a {
 
 .questions__title {
   font-family: StemBold;
-  font-size: 56px;
+  font-size: 3.5rem;
   text-align: center;
   letter-spacing: 3.3px;
   color: #383838;
@@ -907,7 +908,7 @@ footer nav a {
 }
 
 .questions__text {
-  font-size: 19px;
+  font-size: 1.1rem;
   padding: 0 5px;
   text-align: center;
   letter-spacing: 0.7px;
@@ -1906,4 +1907,65 @@ button {
   font-family: StemLight;
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  html {
+    font-size: 14px;
+  }
+  header {
+    padding-top: 1rem;
+  }
+  .header__logo-holder {
+    padding-right: 2rem;
+    margin-right: 2rem;
+  }
+  .header__logo {
+    width: 180px;
+  }
+  .questions {
+    padding: 3rem 0;
+  }
+  .questions__title {
+    font-size: 2.8rem;
+  }
+  .about__building-img {
+    max-width: 800px;
+  }
+  .about__text--bg-dark {
+    max-width: 800px;
+    top: 50px;
+  }
+  .about__investment--content {
+    top: -50px;
+  }
+  .about__investment--circle-img {
+    max-width: 200px;
+    margin-right: 40px;
+  }
+  .about__investment--content {
+    min-height: 500px;
+    padding-right: 3rem;
+  }
+  li.tabs__tab {
+    height: 260px;
+    padding-right: 2.8rem 2.4rem;
+  }
+  .tab-logo-holder {
+    height: 60px;
+  }
+  .tab-logo {
+    height: 100%;
+  }
+  .tab__content {
+    max-width: 1000px;
+    padding: 3rem 7rem 6rem 8rem;
+    min-height: 540px;
+  }
+  .tab__content--text {
+    margin-bottom: 4rem;
+  }
+  .tabs-box__content--image {
+    max-height: 600px;
+  }
 }
