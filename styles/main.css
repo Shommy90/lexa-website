@@ -561,7 +561,14 @@ body {
   border: 1px solid #383838;
   text-transform: uppercase;
   color: #383838;
-  background-color: transparent;
+  background-color: #fff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  background-color: #383838;
+  color: #fff;
 }
 
 .container-wide {
@@ -918,7 +925,7 @@ footer nav a {
 
 .about {
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 3rem;
 }
 
 .about__building-img {
@@ -1021,6 +1028,10 @@ footer nav a {
 .investment-content__text-ellipse img {
   margin-right: 15px;
   margin-top: 4px;
+}
+
+.investment-content__text-ellipse:last-child p {
+  margin-bottom: 0;
 }
 
 .about__investment--circle-img {
@@ -1937,16 +1948,17 @@ button {
     max-width: 800px;
     top: 50px;
   }
-  .about__investment--content {
-    top: -50px;
-  }
   .about__investment--circle-img {
     max-width: 200px;
     margin-right: 40px;
+    margin-bottom: 100px;
   }
   .about__investment--content {
-    min-height: 500px;
-    padding-right: 3rem;
+    top: -50px;
+    max-width: 1000px;
+    min-height: 400px;
+    padding: 3rem 3rem 5rem 5rem;
+    background-image: linear-gradient(45deg, transparent 70px, #ffffff 70px);
   }
   li.tabs__tab {
     height: 230px;
@@ -1985,7 +1997,7 @@ button {
     height: 120px;
   }
   .projects-carousel .carousel-item__project-content--title {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .projects-carousel .carousel-item__project-content--title-image {
     width: 70%;
@@ -2020,7 +2032,81 @@ button {
   .contact-info__number--number {
     font-size: 2rem;
   }
+  .contact {
+    background-size: 30%;
+  }
   .footer__logo {
     width: 180px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .questions {
+    padding-bottom: 0;
+  }
+  .about__building-img {
+    max-width: 700px;
+  }
+  .about__text--bg-dark {
+    max-width: 700px;
+    padding: 2.5rem;
+    padding-bottom: 3rem;
+    background-size: 40%;
+  }
+  .about__text-title {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  .about__text--bg-dark p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  .about__investment--content {
+    max-width: 900px;
+  }
+  .about__investment--content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.4rem;
+  }
+  .about {
+    padding-bottom: 2rem;
+  }
+  li.tabs__tab {
+    padding: 1rem;
+    max-width: 200px;
+    height: 200px;
+  }
+  .tab-title {
+    font-size: 1rem;
+  }
+  .tabs-box__content--image {
+    max-height: 550px;
+  }
+  .tab__content {
+    max-width: 900px;
+    min-height: 400px;
+    background-image: linear-gradient(45deg, transparent 50px, #ffffff 50px);
+    padding: 2.5rem 3rem 4rem 5rem;
+  }
+  .tab__content--logo {
+    margin-bottom: 2rem;
+  }
+  .tab__content--title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  .tab__content--text {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+  }
+  .projects-carousel .carousel-item__project-stats--logos {
+    min-height: 240px;
+  }
+  .projects-carousel ul.projects-logo-list p {
+    font-size: 1rem;
+  }
+  .item__project-stats--numbers-holder-bottom li {
+    font-size: 1.2rem;
   }
 }
