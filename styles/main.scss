@@ -42,7 +42,7 @@ body {
   font-family: StemMedium;
   width: 200px;
   padding: 0 20px;
-  min-height: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1437,5 +1437,103 @@ button {
 
   .item__project-stats--numbers-holder-bottom li {
     font-size: 1.2rem;
+  }
+
+  .tabs-box__content--image {
+    max-height: 500px;
+  }
+}
+
+// media 1100px
+@media (max-width: 1100px) {
+  .button {
+    width: 150px;
+    height: 40px;
+  }
+
+  .header__logo {
+    width: 130px;
+  }
+
+  nav li {
+    margin-right: 1rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  .header__phone-number {
+    font-size: 1rem;
+  }
+
+  .header__contact {
+    margin: 0 20px;
+  }
+
+  .header__socials {
+    padding-left: 20px;
+  }
+
+  .header__socials-link {
+    font-size: 1.5rem;
+  }
+
+  .questions__title {
+    font-size: 2.4rem;
+  }
+
+  .tab__content {
+    max-width: 750px;
+    padding-left: 4rem;
+  }
+
+  .team .container {
+    max-width: 800px;
+  }
+
+  .team__holder {
+    padding: 2.5rem;
+  }
+
+  .team .indicator-holder__arrows {
+    right: -10px;
+    top: 300px;
+  }
+
+  .teab__tab-image-holder {
+    width: 150px;
+    height: 150px;
+  }
+
+  .team__tab-content--text {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+
+  .container-wide.border-line {
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .contact-form-holder {
+    padding-right: 1rem;
+  }
+
+  .contact-form__input,
+  .contact-form__input-holder--message-textarea {
+    padding: 10px;
+  }
+
+  input {
+    height: 45px;
+  }
+
+  .contact-form__input-holder--message-textarea {
+    height: 120px;
+  }
+
+  .footer__logo-holder {
+    margin-right: 25px;
   }
 }
