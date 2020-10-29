@@ -38,6 +38,82 @@ body {
   overflow-x: hidden;
 }
 
+// burger menu button
+
+#nav-icon3 {
+  width: 30px;
+  height: 30px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon3 span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #383838;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+#nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon3 span:nth-child(2),
+#nav-icon3 span:nth-child(3) {
+  top: 9px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 18px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+// burger menu button
+
 .button {
   font-family: StemMedium;
   width: 200px;
@@ -50,7 +126,7 @@ body {
   text-transform: uppercase;
   color: #383838;
   background-color: #fff;
-  transition: all 0.2s ease;
+  transition: all 0.1s ease;
 
   &:hover {
     background-color: #383838;
@@ -76,15 +152,15 @@ header {
   padding: 1.9rem 0 0.35rem;
 
   .container-wide {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: relative;
+    justify-content: space-between !important;
   }
 }
 
-.header__left {
+.header__content {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .header__logo-holder {
@@ -99,6 +175,8 @@ header {
 }
 
 nav {
+  justify-content: flex-end;
+
   ul {
     display: flex;
   }
@@ -186,6 +264,14 @@ footer {
 
 .footer__left {
   display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+footer nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -345,7 +431,7 @@ footer {
   padding: 0 5px;
   text-align: center;
   letter-spacing: 0.7px;
-  line-height: 25px;
+  line-height: 1.5rem;
 }
 
 // ABOUT
@@ -1459,10 +1545,6 @@ button {
     margin-right: 1rem;
   }
 
-  nav a {
-    font-size: 0.9rem;
-  }
-
   .header__phone-number {
     font-size: 1rem;
   }
@@ -1535,5 +1617,201 @@ button {
 
   .footer__logo-holder {
     margin-right: 25px;
+  }
+}
+
+// media 992px
+@media (max-width: 992px) {
+  .navbar-toggler {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    right: 10px;
+  }
+
+  .header__logo-holder {
+    padding-right: 0;
+    margin-right: 0;
+    border: none;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  nav li {
+    margin: 5px 0;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+    padding: 3px 0;
+  }
+
+  .header__contact {
+    font-size: 1.2rem;
+  }
+
+  .header__right {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__socials {
+    margin-left: 0;
+    padding-left: 0;
+    border: none;
+  }
+
+  footer nav ul {
+    flex-direction: row;
+  }
+
+  .footer__top {
+    flex-wrap: wrap;
+  }
+}
+
+// media tablet 768px
+@media (max-width: 800px) {
+  .questions .carousel-indicators.indicators--left {
+    width: 150px;
+  }
+
+  .about {
+    padding-bottom: 0;
+  }
+
+  .about__text--bg-dark {
+    top: 200px;
+    opacity: 0.95;
+  }
+
+  .about__investment {
+    flex-direction: column-reverse;
+  }
+
+  .about__investment--content {
+    top: 100px;
+  }
+
+  .about__investment--circle-img {
+    margin: 100px auto 0 auto;
+  }
+
+  .tabs-box__tabs-holder .container-wide {
+    flex-wrap: wrap;
+  }
+
+  .tab-logo-holder {
+    height: 50px;
+  }
+
+  .projects-carousel {
+    padding-bottom: 0;
+  }
+
+  .projects-carousel .projects-carousel__indicators-holder .container-wide {
+    flex-direction: column-reverse;
+    margin-bottom: 10px;
+  }
+
+  .projects-carousel .indicator-holder__arrows {
+    padding-right: 0;
+    margin-top: 20px;
+  }
+
+  .projects-carousel .carousel-item__project-content--text {
+    margin-left: 0;
+  }
+
+  .projects-carousel .carousel-item__project-content--title-holder {
+    max-width: 100%;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    padding-top: 30px;
+    justify-content: flex-end;
+  }
+
+  .projects-carousel .carousel-item__project-content--title-image {
+    width: 220px;
+    margin-right: 20px;
+  }
+
+  .projects-carousel .carousel-item__project-content--title-image img {
+    position: relative;
+  }
+
+  .projects-carousel ul.projects-logo-list {
+    margin: 0;
+    justify-content: center;
+  }
+
+  .item__project-stats--numbers-holder-top ul {
+    margin: 0;
+    justify-content: center;
+  }
+
+  .item__project-stats--numbers-holder-bottom ul {
+    margin: 0;
+    justify-content: center;
+  }
+
+  .projects-carousel .carousel-item__project-stats--logos {
+    padding: 2rem 0;
+    min-height: 220px;
+  }
+
+  .projects-carousel .carousel-inner {
+    padding: 2rem 0;
+  }
+
+  .contact-form {
+    padding: 2rem;
+  }
+
+  .contact-form__input-holder {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .footer__left {
+    flex-wrap: wrap;
+  }
+
+  .footer__logo-holder {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  footer nav {
+    flex-wrap: wrap;
+  }
+
+  .contact-info__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-info__number--number {
+    font-size: 1.6rem;
+  }
+
+  .contact-info__email {
+    font-size: 1.6rem;
+  }
+
+  .contact-form__title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
   }
 }
