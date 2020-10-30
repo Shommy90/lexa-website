@@ -888,7 +888,7 @@ footer nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 250px;
+  min-height: 200px;
 }
 
 .questions .carousel-inner {
@@ -2449,5 +2449,267 @@ button {
   .contact-form__title {
     font-size: 2rem;
     margin-bottom: 2rem;
+  }
+  .about__text--bg-dark {
+    padding: 1.7rem;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .about__building-img {
+    display: none;
+  }
+  .about__text--bg-dark {
+    position: relative;
+    top: 0;
+  }
+  .about__investment--content {
+    top: 0;
+  }
+  .about__investment--circle-img {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .questions .carousel {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .questions .carousel-indicators.indicators--left {
+    width: 100%;
+    padding-top: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px;
+  }
+  .questions .carousel-indicators.indicators--left li {
+    margin: 0 10px;
+  }
+  .questions .carousel-indicators.indicators--left li .indicator__number {
+    display: none;
+  }
+  .about__investment--content {
+    padding: 2rem 2rem 2.5rem 2.5rem;
+    background-image: linear-gradient(45deg, transparent 30px, #ffffff 30px);
+  }
+  .tabs-box__content--image {
+    display: none;
+  }
+  .tab__content {
+    position: relative;
+    padding: 1.5rem;
+  }
+  .team ol.carousel-indicators li {
+    font-size: 0.85rem;
+  }
+  .teab__tab-image-holder {
+    width: 120px;
+    height: 120px;
+  }
+  .teab__tab-image-holder {
+    margin-bottom: 1rem;
+  }
+  .team__tab-name {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+  li.team__tab .team__tab-arrow-down {
+    bottom: -10px;
+  }
+  .team__tab-content {
+    padding-top: 10px;
+  }
+  .team .indicator-holder__arrows {
+    top: -60px;
+  }
+  .container-wide.border-line {
+    margin: 1.8rem 0;
+  }
+  .contact .container-wide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contact-form-holder {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .contact-info {
+    width: 100%;
+  }
+  .contact-info__icon {
+    margin-bottom: 15px;
+  }
+  .contact-info__number {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact-info__number--country {
+    margin-right: 5px;
+  }
+  .contact-info__underscore {
+    display: none;
+  }
+  .contact-form__title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .about__text--bg-dark p {
+    text-align: justify;
+    line-height: 1.3rem;
+  }
+  .about__investment--content p {
+    text-align: justify;
+    line-height: 1.3rem;
+  }
+  .projects__experience {
+    padding: 0 1rem 1.5rem 1rem;
+    margin: 0 auto;
+  }
+  ul.tabs-box__tabs {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  li.tabs__tab {
+    width: 50%;
+    height: 180px;
+  }
+  .projects-carousel .carousel-indicators li {
+    margin-right: 8px;
+    height: 100px;
+  }
+  .projects-carousel .projects-carousel__title {
+    font-size: 1.6rem;
+  }
+  .projects-carousel .carousel-item__project-content--title {
+    font-size: 1.6rem;
+  }
+  .projects-carousel .carousel-item__project-content--subttitle {
+    font-size: 1.3rem;
+  }
+  .projects-carousel ul.projects-logo-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .projects-carousel ul.projects-logo-list li {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .projects-carousel ul.projects-logo-list li:nth-child(3), .projects-carousel ul.projects-logo-list li:nth-child(4) {
+    margin-bottom: 0;
+  }
+  .item__project-stats--numbers-holder-top ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .item__project-stats--numbers-holder-top li {
+    width: 50%;
+    margin-bottom: 15px;
+  }
+  .item__project-stats--numbers-holder-top li:nth-child(3), .item__project-stats--numbers-holder-top li:nth-child(4) {
+    margin-bottom: 0;
+  }
+  .item__project-stats--numbers-holder-bottom ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .item__project-stats--numbers-holder-bottom li {
+    width: 50%;
+    margin-bottom: 15px;
+  }
+  .item__project-stats--numbers-holder-bottom li:nth-child(3), .item__project-stats--numbers-holder-bottom li:nth-child(4) {
+    margin-bottom: 0;
+  }
+  .projects-carousel .carousel-inner {
+    padding-bottom: 0;
+  }
+  .team ol.carousel-indicators {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+  }
+  .team ol.carousel-indicators li {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 13px;
+    font-size: 1rem;
+  }
+  .team ol.carousel-indicators li:last-child {
+    margin-bottom: 0;
+  }
+  li.team__tab {
+    width: 50%;
+    opacity: 0.8;
+  }
+  li.team__tab:hover {
+    opacity: 1;
+  }
+  li.team__tab.active {
+    opacity: 1;
+    border: 1px solid;
+  }
+  li.team__tab.active .team__tab-arrow-down {
+    display: none;
+  }
+  .team__holder {
+    padding: 1rem;
+  }
+  .contact-form__submit-holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .contact-form__logo-holder {
+    margin-top: 25px;
+  }
+  .contact-form__input-holder--message {
+    margin-bottom: 2.5rem;
+  }
+  .contact-form {
+    padding: 1.5rem;
+  }
+  footer nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__contact {
+    margin-left: 0;
+  }
+  .footer__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__bottom .copyright {
+    margin-bottom: 10px;
+  }
+  .footer__logo-holder {
+    margin: 0 auto;
   }
 }
