@@ -149,7 +149,7 @@ body {
 }
 
 header {
-  padding: 1.9rem 0 0.35rem;
+  padding: 1.3rem 0 0.35rem;
 
   .container-wide {
     position: relative;
@@ -165,13 +165,13 @@ header {
 
 .header__logo-holder {
   border-right: 1px solid rgba(#425559, 0.3);
-  padding-right: 3rem;
-  margin-right: 3rem;
+  padding-right: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .header__logo {
   width: 270px;
-  height: 40px;
+  height: 35px;
 }
 
 nav {
@@ -419,7 +419,7 @@ footer nav {
 
 .questions__title {
   font-family: StemBold;
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-align: center;
   letter-spacing: 3.3px;
   color: #383838;
@@ -441,7 +441,7 @@ footer nav {
 }
 
 .about__building-img {
-  max-width: 1122px;
+  max-width: 1100px;
   width: 100%;
   max-height: 700px;
   object-fit: contain;
@@ -449,20 +449,20 @@ footer nav {
 
 .about__text--bg-dark {
   color: #ffffff;
-  max-width: 915px;
+  max-width: 900px;
   width: 100%;
-  padding: 3.5rem;
+  padding: 4rem;
   padding-bottom: 3.8rem;
   overflow: hidden;
   position: absolute;
   right: 0;
-  top: 100px;
+  top: 50px;
   background: url(../assets/squares-bg.svg) no-repeat top right;
   background-color: #555555;
 
   p {
     font-family: StemLight;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     line-height: 1.6rem;
     letter-spacing: 0.7px;
     max-width: 700px;
@@ -497,14 +497,14 @@ footer nav {
 }
 
 .about__investment--content {
-  max-width: 1400px;
+  max-width: 1300px;
   width: 100%;
-  min-height: 700px;
-  background-image: linear-gradient(45deg, transparent 110px, #ffffff 110px);
+  min-height: 600px;
+  background-image: linear-gradient(45deg, transparent 90px, #ffffff 90px);
   filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.15));
-  padding: 3.5rem 7rem 5.5rem;
+  padding: 3.5rem 5rem 5rem;
   position: relative;
-  top: -125px;
+  top: -180px;
 
   p {
     font-family: StemLight;
@@ -512,7 +512,7 @@ footer nav {
     line-height: 1.8rem;
     letter-spacing: 0.7px;
     color: #425559;
-    margin-bottom: 25px;
+    margin-bottom: 1.2rem;
 
     strong {
       font-family: StemMedium;
@@ -586,12 +586,12 @@ ul.tabs-box__tabs {
 }
 
 li.tabs__tab {
-  max-width: 300px;
+  max-width: 250px;
   width: 100%;
-  height: 300px;
+  height: 250px;
   border-left: 1px solid #f2f2f2;
   border-top: 8px solid #f2f2f2;
-  padding: 3.4rem 2.8rem;
+  padding: 1.8rem 2.4rem;
   display: flex;
   flex-direction: column;
   cursor: pointer;
@@ -612,7 +612,7 @@ li.tabs__tab {
     height: 12px;
     transition: all 0.1s ease;
     position: absolute;
-    bottom: 40px;
+    bottom: 25px;
   }
 
   &.active {
@@ -625,50 +625,53 @@ li.tabs__tab {
 }
 
 .tab-logo-holder {
-  height: 85px;
+  height: 60px;
   display: flex;
   align-items: flex-end;
   margin-bottom: 20px;
 }
 
+.tab-logo {
+  height: 100%;
+}
+
 .tab-title {
   font-family: StemMedium;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #2b2b2b;
   margin-bottom: 1rem;
 }
 
 .tabs-box__content {
-  // min-height: 1000px;
   position: relative;
 }
 
 .tabs-box__content--image {
-  // max-width: 900px;
-  max-height: 850px;
+  max-height: 750px;
   object-fit: contain;
   position: relative;
 }
 
 .tab__content {
-  max-width: 1500px;
+  max-width: 1350px;
   width: 100%;
-  min-height: 700px;
-  background-image: linear-gradient(45deg, transparent 110px, #ffffff 110px);
-  padding: 4rem 10rem 6rem;
+  height: 650px;
+  background-image: linear-gradient(45deg, transparent 90px, #ffffff 90px);
+  padding: 3rem 5rem 5rem 7rem;
   position: absolute;
   top: 0;
   right: 0;
   border-top: 8px solid #f2f2f2;
+  z-index: 999;
 }
 
 .tab__content--logo {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .tab__content--title {
   font-family: StemBold;
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 2.5rem;
   letter-spacing: 1.9px;
   color: #383838;
@@ -677,13 +680,48 @@ li.tabs__tab {
   max-width: 650px;
 }
 
+.tab__content--text-holder {
+  overflow-y: scroll;
+  height: 380px;
+  margin-bottom: 40px;
+
+  .tab__content--text {
+    margin-bottom: 1.8rem;
+  }
+
+  ul {
+    margin-bottom: 1.8rem;
+  }
+
+  li {
+    padding-left: 1.1rem;
+    margin-bottom: 0.7rem;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    position: relative;
+    width: 70%;
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      width: 10px;
+      height: 10px;
+      background-color: #2b2b2b;
+      top: 5px;
+      left: 0;
+      border-radius: 10px;
+    }
+  }
+}
+
 .tab__content--text {
   max-width: 960px;
   font-size: 1.4rem;
   line-height: 1.8rem;
   letter-spacing: 1px;
   color: #2b2b2b;
-  margin-bottom: 100px;
+  margin-bottom: 4rem;
 }
 
 // PROJECTS CAROUSEL
@@ -744,7 +782,6 @@ li.tabs__tab {
       }
 
       &.active {
-        border: 3px solid #000;
         box-sizing: border-box;
       }
     }
@@ -765,13 +802,13 @@ li.tabs__tab {
     flex-direction: column;
     align-items: flex-end;
     position: relative;
-    max-width: 560px;
+    max-width: 500px;
     width: 100%;
   }
 
   .carousel-item__project-content--title {
     font-family: StemBold;
-    font-size: 2.9rem;
+    font-size: 2.6rem;
     letter-spacing: 1.5px;
     color: #383838;
   }
@@ -817,8 +854,8 @@ li.tabs__tab {
   }
 
   .carousel-item__project-stats--logos {
-    padding: 4rem 0;
-    min-height: 350px;
+    padding: 3rem 0;
+    min-height: 320px;
     background-color: #f4f4f4;
     display: flex;
     align-items: center;
@@ -1066,9 +1103,9 @@ li.team__tab {
 }
 
 .teab__tab-image-holder {
-  max-width: 210px;
+  max-width: 200px;
   width: 100%;
-  height: 210px;
+  height: 200px;
   margin-bottom: 1.5rem;
 
   img {
@@ -1162,14 +1199,14 @@ li.team__tab {
 }
 
 .contact-form {
-  padding: 5rem 5.5rem;
+  padding: 4rem 4.5rem;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
   background-color: #fff;
 }
 
 .contact-form__title {
   font-family: StemBold;
-  font-size: 2.7rem;
+  font-size: 2.2rem;
   letter-spacing: 1.7px;
   color: #383838;
   margin-bottom: 3.2rem;
@@ -1287,7 +1324,7 @@ button {
 }
 
 // MEDIA QUERY
-@media only screen and (max-width: 1400px) {
+@media (max-width: 1400px) {
   html {
     font-size: 14px;
   }
@@ -1349,18 +1386,10 @@ button {
     bottom: 20px;
   }
 
-  .tab-logo-holder {
-    height: 60px;
-  }
-
-  .tab-logo {
-    height: 100%;
-  }
-
   .tab__content {
     max-width: 1000px;
     padding: 3rem 6rem 5rem 6rem;
-    min-height: 500px;
+    height: 500px;
     background-image: linear-gradient(45deg, transparent 70px, #ffffff 70px);
   }
 
@@ -1438,7 +1467,7 @@ button {
 }
 
 // media 1300
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   .questions {
     padding-bottom: 0;
   }
@@ -1494,13 +1523,13 @@ button {
 
   .tab__content {
     max-width: 900px;
-    min-height: 400px;
+    height: 400px;
     background-image: linear-gradient(45deg, transparent 50px, #ffffff 50px);
     padding: 2.5rem 3rem 4rem 5rem;
   }
 
-  .tab__content--logo {
-    margin-bottom: 2rem;
+  .tab-logo-holder {
+    height: 50px;
   }
 
   .tab__content--title {
@@ -1708,10 +1737,6 @@ button {
 
   .tabs-box__tabs-holder .container-wide {
     flex-wrap: wrap;
-  }
-
-  .tab-logo-holder {
-    height: 50px;
   }
 
   .projects-carousel {
