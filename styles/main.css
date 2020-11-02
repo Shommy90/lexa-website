@@ -2221,6 +2221,11 @@ button {
   .tabs-box__content--image {
     max-height: 500px;
   }
+  .team__holder {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2.5rem 4.5rem 3.5rem;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -2342,6 +2347,9 @@ button {
     margin-left: 0;
     padding-left: 0;
     border: none;
+  }
+  .team__holder {
+    width: 100%;
   }
   footer nav ul {
     -webkit-box-orient: horizontal;
@@ -2549,6 +2557,14 @@ button {
   .teab__tab-image-holder {
     margin-bottom: 1rem;
   }
+  ul.tabs-box__tabs {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  li.tabs__tab {
+    width: 50%;
+    height: 180px;
+  }
   .team__tab-name {
     padding-bottom: 1rem;
     margin-bottom: 1rem;
@@ -2610,14 +2626,6 @@ button {
   .projects__experience {
     padding: 0 1rem 1.5rem 1rem;
     margin: 0 auto;
-  }
-  ul.tabs-box__tabs {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  li.tabs__tab {
-    width: 50%;
-    height: 180px;
   }
   .projects-carousel .carousel-indicators li {
     margin-right: 8px;
