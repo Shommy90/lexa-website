@@ -1521,6 +1521,10 @@ button {
     max-height: 550px;
   }
 
+  .tab__content--text-holder {
+    height: 220px;
+  }
+
   .tab__content {
     max-width: 900px;
     height: 400px;
@@ -1933,6 +1937,11 @@ button {
   li.tabs__tab {
     width: 50%;
     height: 180px;
+
+    &:nth-child(2),
+    &:nth-child(4) {
+      border-right: 1px solid #f2f2f2;
+    }
   }
 
   .team__tab-name {
