@@ -2222,7 +2222,8 @@ button {
 }
 
 @media (max-width: 1300px) {
-  .container-wide {
+  .container-wide,
+  .footer__container {
     max-width: 1200px;
   }
   .questions {
