@@ -36,6 +36,12 @@
     ></script>
   </head>
   <body>
+    <!-- page loader -->
+    <div class="spinner-holder">
+      <div class="spinner"></div>
+    </div>
+    <!-- page loader -->
+
     <header>
       <div class="container-wide navbar navbar-expand-lg">
         <div class="header__logo-holder">
@@ -1606,6 +1612,12 @@
         $("#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4").click(function () {
           $(this).toggleClass("open");
         });
+      });
+    </script>
+
+    <script>
+      $(window).ready(function () {
+        $(".spinner-holder").fadeOut("slow");
       });
     </script>
   </body>

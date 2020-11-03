@@ -37,6 +37,48 @@ body {
   margin: 0 auto;
   overflow-x: hidden;
 }
+// spinner
+.spinner-holder {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  border: 6px solid #f3f3f3;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 0.5s linear infinite;
+  border-top: 6px solid #2b2b2b;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+// spinner
 
 // burger menu button
 
@@ -456,7 +498,7 @@ footer nav {
   overflow: hidden;
   position: absolute;
   right: 0;
-  top: 50px;
+  top: 100px;
   background: url(../assets/squares-bg.svg) no-repeat top right;
   background-color: #555555;
 
@@ -504,7 +546,7 @@ footer nav {
   filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.15));
   padding: 3.5rem 5rem 5rem;
   position: relative;
-  top: -180px;
+  top: -130px;
 
   p {
     font-family: StemLight;
