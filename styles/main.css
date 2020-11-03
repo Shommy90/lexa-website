@@ -1082,7 +1082,7 @@ footer nav {
 .about__investment--content p {
   font-family: StemLight;
   font-size: 1.1rem;
-  line-height: 1.8rem;
+  line-height: 1.5rem;
   letter-spacing: 0.7px;
   color: #425559;
   margin-bottom: 1.2rem;
@@ -1278,7 +1278,7 @@ li.tabs__tab.active span.tab-arrow {
 .tab__content--text-holder {
   overflow-y: scroll;
   height: 380px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .tab__content--text-holder .tab__content--text {
@@ -1292,10 +1292,10 @@ li.tabs__tab.active span.tab-arrow {
 .tab__content--text-holder li {
   padding-left: 1.1rem;
   margin-bottom: 0.7rem;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   line-height: 1.5rem;
   position: relative;
-  width: 70%;
+  width: 80%;
 }
 
 .tab__content--text-holder li::before {
@@ -1392,7 +1392,7 @@ li.tabs__tab.active span.tab-arrow {
 }
 
 .projects-carousel .carousel-inner {
-  padding: 50px 0;
+  padding: 3rem 0;
 }
 
 .projects-carousel .carousel-item__project-content {
@@ -1768,14 +1768,14 @@ li.team__tab.active .team__tab-arrow-down {
   display: block;
 }
 
-.teab__tab-image-holder {
+.tab__tab-image-holder {
   max-width: 200px;
   width: 100%;
   height: 200px;
   margin-bottom: 1.5rem;
 }
 
-.teab__tab-image-holder img {
+.tab__tab-image-holder img {
   width: 100%;
 }
 
@@ -2043,6 +2043,13 @@ button {
   header {
     padding-top: 1rem;
   }
+  .container {
+    max-width: 1000px;
+  }
+  .container-wide,
+  .footer__container {
+    max-width: 1300px;
+  }
   .header__logo-holder {
     padding-right: 2rem;
     margin-right: 2rem;
@@ -2124,9 +2131,15 @@ button {
     height: 100px;
     margin-bottom: 20px;
   }
-  .teab__tab-image-holder {
+  .tab__tab-image-holder {
     max-width: 180px;
     height: 180px;
+  }
+  .tab__content--text-holder {
+    height: 310px;
+  }
+  .projects-carousel .carousel-inner {
+    padding: 2rem 0;
   }
   .contact-form {
     padding: 3rem;
@@ -2147,9 +2160,21 @@ button {
   .footer__logo {
     width: 180px;
   }
+  .about__investment--content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.4rem;
+  }
+  .container-wide.border-line {
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+  }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
+  .container-wide {
+    max-width: 1200px;
+  }
   .questions {
     padding-bottom: 0;
   }
@@ -2173,11 +2198,6 @@ button {
   .about__investment--content {
     max-width: 900px;
   }
-  .about__investment--content p {
-    font-size: 1rem;
-    margin-bottom: 15px;
-    line-height: 1.4rem;
-  }
   .about {
     padding-bottom: 2rem;
   }
@@ -2192,14 +2212,14 @@ button {
   .tabs-box__content--image {
     max-height: 550px;
   }
-  .tab__content--text-holder {
-    height: 220px;
-  }
   .tab__content {
     max-width: 900px;
-    height: 400px;
+    height: 450px;
     background-image: linear-gradient(45deg, transparent 50px, #ffffff 50px);
     padding: 2.5rem 3rem 4rem 5rem;
+  }
+  .tab__content--text-holder {
+    height: 270px;
   }
   .tab-logo-holder {
     height: 50px;
@@ -2271,17 +2291,13 @@ button {
     right: -10px;
     top: 300px;
   }
-  .teab__tab-image-holder {
+  .tab__tab-image-holder {
     width: 150px;
     height: 150px;
   }
   .team__tab-content--text {
     font-size: 0.9rem;
     line-height: 1.2rem;
-  }
-  .container-wide.border-line {
-    margin-top: 2rem;
-    margin-bottom: 2.5rem;
   }
   .contact-form-holder {
     padding-right: 1rem;
@@ -2453,9 +2469,6 @@ button {
     padding: 2rem 0;
     min-height: 220px;
   }
-  .projects-carousel .carousel-inner {
-    padding: 2rem 0;
-  }
   .contact-form {
     padding: 2rem;
   }
@@ -2553,11 +2566,11 @@ button {
   .team ol.carousel-indicators li {
     font-size: 0.85rem;
   }
-  .teab__tab-image-holder {
+  .tab__tab-image-holder {
     width: 120px;
     height: 120px;
   }
-  .teab__tab-image-holder {
+  .tab__tab-image-holder {
     margin-bottom: 1rem;
   }
   ul.tabs-box__tabs {
@@ -2710,7 +2723,6 @@ button {
   }
   li.team__tab.active {
     opacity: 1;
-    border: 1px solid;
   }
   li.team__tab.active .team__tab-arrow-down {
     display: none;

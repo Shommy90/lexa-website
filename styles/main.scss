@@ -509,7 +509,7 @@ footer nav {
   p {
     font-family: StemLight;
     font-size: 1.1rem;
-    line-height: 1.8rem;
+    line-height: 1.5rem;
     letter-spacing: 0.7px;
     color: #425559;
     margin-bottom: 1.2rem;
@@ -683,7 +683,7 @@ li.tabs__tab {
 .tab__content--text-holder {
   overflow-y: scroll;
   height: 380px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   .tab__content--text {
     margin-bottom: 1.8rem;
@@ -696,10 +696,10 @@ li.tabs__tab {
   li {
     padding-left: 1.1rem;
     margin-bottom: 0.7rem;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     line-height: 1.5rem;
     position: relative;
-    width: 70%;
+    width: 80%;
 
     &::before {
       position: absolute;
@@ -788,7 +788,7 @@ li.tabs__tab {
   }
 
   .carousel-inner {
-    padding: 50px 0;
+    padding: 3rem 0;
   }
 
   .carousel-item__project-content {
@@ -1102,7 +1102,7 @@ li.team__tab {
   }
 }
 
-.teab__tab-image-holder {
+.tab__tab-image-holder {
   max-width: 200px;
   width: 100%;
   height: 200px;
@@ -1333,6 +1333,15 @@ button {
     padding-top: 1rem;
   }
 
+  .container {
+    max-width: 1000px;
+  }
+
+  .container-wide,
+  .footer__container {
+    max-width: 1300px;
+  }
+
   .header__logo-holder {
     padding-right: 2rem;
     margin-right: 2rem;
@@ -1435,9 +1444,17 @@ button {
     margin-bottom: 20px;
   }
 
-  .teab__tab-image-holder {
+  .tab__tab-image-holder {
     max-width: 180px;
     height: 180px;
+  }
+
+  .tab__content--text-holder {
+    height: 310px;
+  }
+
+  .projects-carousel .carousel-inner {
+    padding: 2rem 0;
   }
 
   .contact-form {
@@ -1464,10 +1481,25 @@ button {
   .footer__logo {
     width: 180px;
   }
+
+  .about__investment--content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.4rem;
+  }
+
+  .container-wide.border-line {
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+  }
 }
 
-// media 1400
-@media (max-width: 1400px) {
+// media 1300
+@media (max-width: 1300px) {
+  .container-wide {
+    max-width: 1200px;
+  }
+
   .questions {
     padding-bottom: 0;
   }
@@ -1497,12 +1529,6 @@ button {
     max-width: 900px;
   }
 
-  .about__investment--content p {
-    font-size: 1rem;
-    margin-bottom: 15px;
-    line-height: 1.4rem;
-  }
-
   .about {
     padding-bottom: 2rem;
   }
@@ -1521,15 +1547,15 @@ button {
     max-height: 550px;
   }
 
-  .tab__content--text-holder {
-    height: 220px;
-  }
-
   .tab__content {
     max-width: 900px;
-    height: 400px;
+    height: 450px;
     background-image: linear-gradient(45deg, transparent 50px, #ffffff 50px);
     padding: 2.5rem 3rem 4rem 5rem;
+  }
+
+  .tab__content--text-holder {
+    height: 270px;
   }
 
   .tab-logo-holder {
@@ -1622,7 +1648,7 @@ button {
     top: 300px;
   }
 
-  .teab__tab-image-holder {
+  .tab__tab-image-holder {
     width: 150px;
     height: 150px;
   }
@@ -1630,11 +1656,6 @@ button {
   .team__tab-content--text {
     font-size: 0.9rem;
     line-height: 1.2rem;
-  }
-
-  .container-wide.border-line {
-    margin-top: 2rem;
-    margin-bottom: 2.5rem;
   }
 
   .contact-form-holder {
@@ -1808,10 +1829,6 @@ button {
     min-height: 220px;
   }
 
-  .projects-carousel .carousel-inner {
-    padding: 2rem 0;
-  }
-
   .contact-form {
     padding: 2rem;
   }
@@ -1921,12 +1938,12 @@ button {
     font-size: 0.85rem;
   }
 
-  .teab__tab-image-holder {
+  .tab__tab-image-holder {
     width: 120px;
     height: 120px;
   }
 
-  .teab__tab-image-holder {
+  .tab__tab-image-holder {
     margin-bottom: 1rem;
   }
 
@@ -2106,7 +2123,6 @@ button {
 
     &.active {
       opacity: 1;
-      border: 1px solid;
     }
   }
 
