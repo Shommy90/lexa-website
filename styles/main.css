@@ -656,9 +656,10 @@ body {
 
 .button {
   font-family: StemMedium;
-  width: 200px;
+  font-size: 0.9rem;
+  width: 170px;
   padding: 0 20px;
-  height: 50px;
+  height: 44px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1291,16 +1292,16 @@ li.tabs__tab.active span.tab-arrow {
 }
 
 .tabs-box__content--image {
-  max-height: 750px;
+  max-height: 700px;
   -o-object-fit: contain;
      object-fit: contain;
   position: relative;
 }
 
 .tab__content {
-  max-width: 1350px;
+  max-width: 1250px;
   width: 100%;
-  height: 650px;
+  height: 600px;
   background-image: linear-gradient(45deg, transparent 90px, #ffffff 90px);
   padding: 3rem 5rem 5rem 7rem;
   position: absolute;
@@ -1308,6 +1309,48 @@ li.tabs__tab.active span.tab-arrow {
   right: 0;
   border-top: 8px solid #f2f2f2;
   z-index: 999;
+}
+
+.tab__content.contact-services {
+  background-image: linear-gradient(45deg, transparent 90px, #545454fc 90px);
+  padding: 3rem 8rem;
+}
+
+.services .contact-form__title {
+  font-family: StemMedium;
+  color: #fff;
+  font-size: 1.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.tab__content input {
+  height: 50px;
+  color: #fff;
+}
+
+.tab__content textarea {
+  height: 140px;
+  color: #fff;
+}
+
+.tab__content input::-webkit-input-placeholder,
+.tab__content textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.tab__content input:-ms-input-placeholder,
+.tab__content textarea:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.tab__content input::-ms-input-placeholder,
+.tab__content textarea::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.tab__content input::placeholder,
+.tab__content textarea::placeholder {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .tab__content--logo {
@@ -1933,7 +1976,7 @@ li.team__tab.active .team__tab-arrow-down {
   text-transform: uppercase;
 }
 
-.contact-form form {
+form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2158,6 +2201,21 @@ button {
   .tabs-box__content--image {
     max-height: 600px;
   }
+  .tab__content.contact-services {
+    padding: 3rem 7rem;
+    background-image: linear-gradient(45deg, transparent 70px, #545454fc 70px);
+  }
+  .services .contact-form__title {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  .tab__content input {
+    padding: 1rem;
+    height: 40px;
+  }
+  .services .contact-form__input-holder--message {
+    margin-bottom: 2rem;
+  }
   .projects-carousel .carousel-indicators li {
     max-width: 200px;
     height: 120px;
@@ -2282,6 +2340,10 @@ button {
   .tab__content--text {
     font-size: 1.1rem;
     line-height: 1.4rem;
+  }
+  .tab__content.contact-services {
+    padding: 2rem 6rem;
+    background-image: linear-gradient(45deg, transparent 50px, #545454fc 50px);
   }
   .projects-carousel .carousel-item__project-stats--logos {
     min-height: 240px;
@@ -2464,6 +2526,12 @@ button {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .tab__content.contact-services {
+    padding: 2rem 4rem;
+  }
+  .services .contact-form__input-holder {
+    width: 49%;
+  }
   .projects-carousel {
     padding-bottom: 0;
   }
@@ -2635,6 +2703,10 @@ button {
   li.tabs__tab:nth-child(2), li.tabs__tab:nth-child(4) {
     border-right: 1px solid #f2f2f2;
   }
+  .tab__content.contact-services {
+    background-image: linear-gradient(45deg, transparent 25px, #545454fc 25px);
+    padding: 2rem;
+  }
   .team__tab-name {
     padding-bottom: 1rem;
     margin-bottom: 1rem;
@@ -2693,6 +2765,12 @@ button {
   .about__investment--content p {
     text-align: justify;
     line-height: 1.3rem;
+  }
+  .tab__content {
+    height: auto;
+  }
+  .services .contact-form__input-holder {
+    width: 100%;
   }
   .projects__experience {
     padding: 0 1rem 1.5rem 1rem;

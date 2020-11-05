@@ -1,3 +1,4 @@
+// PROJECTS
 $(document).ready(function () {
   $(".tab__content").hide();
   $(".tab__content:first").show();
@@ -10,8 +11,18 @@ $(document).ready(function () {
     $("ul.tabs li").removeClass("active");
     $(this).addClass("active");
   });
+
+  $(".tab__content--btn").click(function () {
+    $(".tab__content").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+
+    $(".tab__content--btn").removeClass("active");
+    $(this).addClass("active");
+  });
 });
 
+// TEAM
 $(document).ready(function () {
   $(".content--executive").hide();
   $(".content--executive:first").show();
