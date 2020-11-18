@@ -1160,7 +1160,7 @@ li.team__tab {
 
   .team__tab-arrow-down {
     position: absolute;
-    bottom: -20px;
+    bottom: -10px;
     left: 0;
     right: 0;
     margin: auto;
@@ -2077,10 +2077,6 @@ button {
     margin-bottom: 1rem;
   }
 
-  li.team__tab .team__tab-arrow-down {
-    bottom: -10px;
-  }
-
   .team__tab-content {
     padding-top: 10px;
   }
@@ -2235,7 +2231,7 @@ button {
 
   li.team__tab {
     width: 50%;
-    opacity: 0.8;
+    // opacity: 0.8;
 
     &:hover {
       opacity: 1;
