@@ -1181,6 +1181,9 @@ li.team__tab {
   width: 100%;
   height: 200px;
   margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   img {
     width: 100%;
