@@ -1407,6 +1407,16 @@ button {
   line-height: 1.5rem;
 }
 
+.read-more-btn {
+  color: rgba(#383838, 0.7);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#more {
+  display: none;
+}
+
 // MEDIA QUERY
 @media (max-width: 1450px) {
   html {

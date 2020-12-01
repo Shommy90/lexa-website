@@ -662,8 +662,8 @@
                       Central-South European startup studio and accelerator for
                       esports, gaming, and virtual technologies (AR, VR, XR). In
                       two stages.
-                    </p>
-                    <p>
+                      <br />
+                      <br />
                       #1 Reveris esports creativity center & online hub In
                       Ljubljana, Slovenia, Reveris opened a multifunctional
                       meetup space to inspire creativity, ideas, and knowledge
@@ -676,10 +676,13 @@
                       whom they are creating the central meeting point for the
                       community, personal growth, and entrepreneurship in the
                       domain of video games and virtual worlds.
-                    </p>
-                    <p>
+                      <br />
+                      <br />
                       #2 Reveris startup factory Reveris developed an
                       acceleration program for individuals & teams. And through
+                      <span id="dots">...</span>
+
+                      <span id="more">
                       the acceleration rounds are retaining the best talent
                       in-house and form a startup studio team for fast product
                       prototyping. The accelerator unlocks the potential in the
@@ -697,8 +700,8 @@
                       tech to power all these (AI, blockchain, cloud). This will
                       become a lower-risk entry point for investors into this
                       growing but hardly-understood market.
-                    </p>
-                    <p>
+                      <br />
+                      <br />
                       The founding team of 12 people has a unique mixture of
                       business experience, esports passion, and tech & execution
                       know-how. They are professionally experienced with
@@ -711,6 +714,13 @@
                       them is a professional esports player, although all are
                       fans of esports since its very beginnings, gamers since
                       childhood, tech addicts.
+                    </span>
+                    <span
+                      class="read-more-btn"
+                      id="readMoreBtn"
+                      onclick="readMore()"
+                      >Read more</span
+                    >
                     </p>
                     <p>
                       <a href="http://reveris.net/" target="_blank"
@@ -1794,6 +1804,24 @@
       $(window).ready(function () {
         $(".spinner-holder").fadeOut("slow");
       });
+    </script>
+
+    <script>
+      function readMore() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("readMoreBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Show less";
+          moreText.style.display = "inline";
+        }
+      }
     </script>
   </body>
 </html>
